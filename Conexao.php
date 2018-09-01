@@ -5,7 +5,7 @@ class Conexao {
 
 	public function conectar()
 	{
-		$this->conexao = new PDO('mysql:host=localhost;dbname=eleicoes;charset=utf8', 'root', 'kg33');
+		$this->conexao = new PDO('mysql:host=localhost;dbname=eleicoes;charset=utf8', 'root', '');
 	}
 	
 	public function desconectar()
