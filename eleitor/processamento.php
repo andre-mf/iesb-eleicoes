@@ -29,8 +29,6 @@ switch ($_GET['acao']){
     case 'verificar_nome':
         $existe = $eleitor->existeNome($_GET['nome']);
 
-        if ($existe){
-
             if ($existe){
                 if ($existe > 1){
                     echo "<div class='alert' style='background: #2093ee; color: #ffffff'><h3 class='text-center'>Já existem {$existe} eleitores chamados {$_GET['nome']}, informe outro. </h3></div>";
@@ -39,7 +37,6 @@ switch ($_GET['acao']){
                 }
             }
 
-        }
         die;
         break;
 }
