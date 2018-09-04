@@ -31,5 +31,4 @@ class Conexao {
 		$this->desconectar();
 		return $retorno;
 	}
-//	Alterei o teste
 }
