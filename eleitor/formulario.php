@@ -39,7 +39,7 @@ include_once '../cabecalho.php';
     <div class="col-md-12 panel-body" style="padding-bottom:30px;">
         <!--Primeira coluna do Formulário  -->
         <div class="col-md-6">
-            <form action="processamento.php?acao=salvar" method="post" class="form-horizontal">
+            <form enctype="multipart/form-data" action="processamento.php?acao=salvar" method="post" class="form-horizontal">
                 <!-- ID do eleitor -->
                 <input type="hidden" name="id_eleitor" value="<?php echo $eleitor->getId_eleitor(); ?>">
                 <!-- Nome -->
@@ -79,11 +79,10 @@ include_once '../cabecalho.php';
                     <label> <i class="fa fa-mobile-phone"></i> Telefone</label>
                 </div>
                 <!-- Foto -->
-                <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <input type="text" class="form-text" id="foto" name="foto" required
-                           value="<?php echo $eleitor->getFoto(); ?>">
-                    <span class="bar"></span>
+                <div class="form-group" style="margin-top:40px !important;">
                     <label> <i class="fa fa-file-photo-o"></i> Foto</label>
+                    <input type="file" class="form-text" id="foto" name="foto" required
+                           value="<?php echo $eleitor->getFoto(); ?>">
                 </div>
         </div>
         <!-- Segunda coluna do Formulário -->

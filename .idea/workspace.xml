@@ -4,7 +4,6 @@
     <list default="true" id="0daff5c7-899d-4e7c-8f63-ccd052f592e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eleitor/formulario.php" afterPath="$PROJECT_DIR$/eleitor/formulario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uf/formulario.php" afterPath="$PROJECT_DIR$/uf/formulario.php" />
     </list>
     <ignored path="iesb-eleicoes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +47,20 @@
     <favorites_list name="iesb-eleicoes" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="formulario.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eleitor/formulario.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+              <folding>
+                <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -149,6 +161,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="iesb-eleicoes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iesb-eleicoes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iesb-eleicoes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eleitor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -262,7 +288,7 @@
       <workItem from="1535644008532" duration="18258000" />
       <workItem from="1535734096451" duration="18476000" />
       <workItem from="1536100668490" duration="1988000" />
-      <workItem from="1536102793688" duration="2682000" />
+      <workItem from="1536102793688" duration="3383000" />
     </task>
     <task id="LOCAL-00001" summary="Teste">
       <created>1536102014581</created>
@@ -306,11 +332,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536103741411</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Correção do script para pesquisa de nome com serialize()">
+      <created>1536106053239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536106053239</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80963000" />
+    <option name="totallyTimeSpent" value="81664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -373,7 +406,8 @@
     <MESSAGE value="Exclui o comentário teste" />
     <MESSAGE value="Deletei aulas" />
     <MESSAGE value="Deletei if redundante" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deletei if redundante" />
+    <MESSAGE value="Correção do script para pesquisa de nome com serialize()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção do script para pesquisa de nome com serialize()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -392,7 +426,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -601,9 +637,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eleitor/formulario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
