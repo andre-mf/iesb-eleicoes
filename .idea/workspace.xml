@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0daff5c7-899d-4e7c-8f63-ccd052f592e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eleitor/formulario.php" afterPath="$PROJECT_DIR$/eleitor/formulario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uf/formulario.php" afterPath="$PROJECT_DIR$/uf/formulario.php" />
     </list>
     <ignored path="iesb-eleicoes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,10 +86,10 @@
         <option value="$PROJECT_DIR$/municipio/Municipio.php" />
         <option value="$PROJECT_DIR$/location/scriptCEP.php" />
         <option value="$PROJECT_DIR$/municipio/processamento.php" />
-        <option value="$PROJECT_DIR$/eleitor/formulario.php" />
-        <option value="$PROJECT_DIR$/uf/formulario.php" />
         <option value="$PROJECT_DIR$/Conexao.php" />
         <option value="$PROJECT_DIR$/eleitor/processamento.php" />
+        <option value="$PROJECT_DIR$/uf/formulario.php" />
+        <option value="$PROJECT_DIR$/eleitor/formulario.php" />
       </list>
     </option>
   </component>
@@ -147,20 +149,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="iesb-eleicoes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iesb-eleicoes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iesb-eleicoes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eleitor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,7 +262,7 @@
       <workItem from="1535644008532" duration="18258000" />
       <workItem from="1535734096451" duration="18476000" />
       <workItem from="1536100668490" duration="1988000" />
-      <workItem from="1536102793688" duration="925000" />
+      <workItem from="1536102793688" duration="2682000" />
     </task>
     <task id="LOCAL-00001" summary="Teste">
       <created>1536102014581</created>
@@ -311,11 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536103659700</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Deletei if redundante">
+      <created>1536103741411</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536103741411</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79206000" />
+    <option name="totallyTimeSpent" value="80963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -466,13 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uf/formulario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uf/processamento.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -556,26 +544,11 @@
     <entry file="das://0eac4f9e-09e7-4524-902e-2ccac01d0ce2/schema/eleicoes/table/eleitor" />
     <entry file="das://0eac4f9e-09e7-4524-902e-2ccac01d0ce2/schema/eleicoes/table/uf" />
     <entry file="file://$PROJECT_DIR$/teste.php" />
-    <entry file="file://$PROJECT_DIR$/uf/processamento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="81" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eleitor/teste.php" />
     <entry file="file://$PROJECT_DIR$/Conexao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eleitor/formulario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3446">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -605,6 +578,32 @@
             <marker date="1536103615849" expanded="true" signature="912:947" ph="..." />
             <marker date="1536103615849" expanded="true" signature="1136:1171" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uf/formulario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uf/processamento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="81" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="81" />
+          <folding>
+            <marker date="1536100553077" expanded="true" signature="582:617" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eleitor/formulario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

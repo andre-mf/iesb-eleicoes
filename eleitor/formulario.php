@@ -200,7 +200,7 @@ include_once '../rodape.php';
         $('#nome').change(function () {
 
             $.ajax({
-                url: 'processamento.php?acao=verificar_nome&nome=' + $('#nome').val(),
+                url: 'processamento.php?acao=verificar_nome&' + $('#nome').serialize(),
                 success: function (dados) {
                 $('#mensagemNome').html(dados);
                 }

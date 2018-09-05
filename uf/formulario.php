@@ -79,7 +79,7 @@ include_once '../rodape.php';
         });
 
         $('#nome').change(function () {
-            $('#mensagem').load('processamento.php?acao=verificar_nome&nome=' + $('#nome').val());
+            $('#mensagem').load('processamento.php?acao=verificar_nome&' + $('#nome').serialize());
         })
 
     })
