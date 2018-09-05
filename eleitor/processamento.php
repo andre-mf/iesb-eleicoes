@@ -9,6 +9,10 @@ $eleitor = new eleitor();
 
 switch ($_GET['acao']){
     case 'salvar':
+
+        $origem = $_FILES['foto']['tmp_name'];
+        $destino = '';
+
         if(!empty($_POST['id_eleitor'])){
             $eleitor->alterar($_POST);
         } else {

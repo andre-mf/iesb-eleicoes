@@ -326,6 +326,8 @@ class Eleitor{
         $id_municipio  = $dados['id_municipio'];
         $foto  = $dados['foto'];
 
+        $this->uploadFoto();
+
         $conexao = new Conexao();
 
         $sql = "insert into eleitor (nome, titulo, zona,
@@ -357,6 +359,8 @@ class Eleitor{
         $numero_endereco  = $dados['numero_endereco'];
         $id_municipio  = $dados['id_municipio'];
         $foto  = $dados['foto'];
+
+        $this->uploadFoto();
 
         $conexao = new Conexao();
 
@@ -404,6 +408,16 @@ class Eleitor{
         $dados = $conexao->recuperarDados($sql);
 
         return $dados[0]['qtd'];
+    }
+
+    public function uploadFoto()
+    {
+        if ($_FILES['foto']['erro'] == UPLOAD_ERR_OK){
+            $origem = $_FILES['foto']['tmp_name'];
+            $destino = '../upload/eleitor/' . $FILES['foto']['name'];
+
+            move_uploaded_file($origem, $destino);
+        }
     }
 
 }
