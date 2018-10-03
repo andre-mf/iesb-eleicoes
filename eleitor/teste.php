@@ -2,7 +2,7 @@
 include_once "Eleitor.php";
 include_once "../uf/Uf.php";
 
-$uf = new Uf();
+$uf = new usuario();
 
 $eleitor = new Eleitor();
 
@@ -29,7 +29,7 @@ var_dump($eleitor->existeNome('Maria'));
 
 // incluindo as UFs
 include_once '../uf/Uf.php';
-$uf = new Uf();
+$uf = new usuario();
 
 // Recuprando os dados de municipio
 $ufs = $uf->recuperarDados();

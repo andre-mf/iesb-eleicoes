@@ -1,10 +1,10 @@
 <?php
-include_once 'Uf.php';
+include_once 'Usuario.php';
 
-$uf = new usuario();
+$usuario = new usuario();
 
-if (!empty($_GET['id_uf'])) {
-    $uf->carregarPorId($_GET['id_uf']);
+if (!empty($_GET['id_usuario'])) {
+    $usuario->carregarPorId($_GET['id_usuario']);
 }
 
 include_once '../cabecalho.php';
@@ -13,7 +13,7 @@ include_once '../cabecalho.php';
     <div class="panel box-shadow-none content-header">
         <div class="panel-body">
             <div class="col-md-12">
-                <h3 class="animated fadeInLeft">União Federativa</h3>
+                <h3 class="animated fadeInLeft">Usuario</h3>
             </div>
         </div>
     </div>
@@ -27,16 +27,10 @@ include_once '../cabecalho.php';
                     </div>
 
                 <form action="processamento.php?acao=salvar" method="post" class="form-horizontal">
-
-                    <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                        <input type="text" class="form-text" id="id_uf" name="id_uf" required
-                               value="<?= $uf->getIdUf(); ?>">
-                        <span class="bar"></span>
-                        <label>Sigla UF</label>
-                    </div>
+                    <input type="hidden" name="id_usuario" id="id_usuario" value="<?php echo $usuario->getIdUsuario(); ?>"/>
                     <div class="form-group form-animate-text" style="margin-top:40px !important;">
                         <input type="text" class="form-text" id="nome" name="nome" required
-                               value="<?php echo $uf->getNome(); ?>">
+                               value="<?php echo $usuario->getNome(); ?>">
                         <span class="bar"></span>
                         <label>Nome</label>
                     </div>
@@ -57,30 +51,3 @@ include_once '../cabecalho.php';
 include_once '../rodape.php';
 ?>
 
-<script>
-    $(function () {
-
-        // $('#id_uf').change(function() {
-        //     $uf = $('#id_uf').val();
-        //     $.ajax({
-        //         url: 'processamento.php?acao=verificar_sigla&id_uf=' + $uf,
-        //         success: function (dados) {
-        //             if (dados){
-        //                 alert(dados);
-        //             }
-        //         }
-        //     });
-        // });
-
-        $('#id_uf').change(function () {
-            $uf = $('#id_uf').val();
-            $('#mensagem').load('processamento.php?acao=verificar_sigla&id_uf=' + $uf.toUpperCase());
-
-        });
-
-        $('#nome').change(function () {
-            $('#mensagem').load('processamento.php?acao=verificar_nome&' + $('#nome').serialize());
-        })
-
-    })
-</script>

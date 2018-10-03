@@ -10,7 +10,7 @@ $municipio = new Municipio();
 
 // incluindo as UFs
 include_once '../uf/Uf.php';
-$uf = new Uf();
+$uf = new usuario();
 
 // Recuprando os dados de municipio
 $municipios = $municipio->recuperarDados();

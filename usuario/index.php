@@ -1,8 +1,8 @@
 <?php
-include_once 'Uf.php';
+include_once 'Usuario.php';
 
-$uf = new usuario();
-$aUf = $uf->recuperarDados();
+$usuario = new usuario();
+$aUsuario = $usuario->recuperarDados();
 
 include_once '../cabecalho.php';
 ?>
@@ -10,7 +10,7 @@ include_once '../cabecalho.php';
     <div class="panel box-shadow-none content-header">
         <div class="panel-body">
             <div class="col-md-12">
-                <h3 class="animated fadeInLeft">União Federativa</h3>
+                <h3 class="animated fadeInLeft">Usuario</h3>
             </div>
         </div>
     </div>
@@ -33,16 +33,16 @@ include_once '../cabecalho.php';
                             </tr>
                             </thead>
                             <tbody>
-                            <?php foreach ($aUf as $uf) {
+                            <?php foreach ($aUsuario as $usuario) {
                                 echo "
                                     <tr>
                                         <td>
-                                            <a href='formulario.php?id_uf={$uf['id_uf']}'><span class='icons icon-note'></span></a>
+                                            <a href='formulario.php?id_usuario={$usuario['id_usuario']}'><span class='icons icon-note'></span></a>
                                         </td>
                                         <td>
-                                            <a href='processamento.php?acao=excluir&id_uf={$uf['id_uf']}'><span class='fa fa-trash-o'></span></a>
+                                            <a href='processamento.php?acao=excluir&id_usuario={$usuario['id_usuario']}'><span class='fa fa-trash-o'></span></a>
                                         </td>
-                                        <td>{$uf['nome']}</td>
+                                        <td>{$usuario['nome']}</td>
                                     </tr>
                                 ";
                             } ?>
