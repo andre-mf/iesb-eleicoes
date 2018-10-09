@@ -2,7 +2,7 @@
 
 include_once '../Conexao.php';
 
-class perfil
+class Perfil
 {
 
     protected $id_perfil;
@@ -72,7 +72,7 @@ class perfil
 
         $conexao = new Conexao();
 
-        $sql = "insert into perfil (id_perfil, nome) values ('$id_perfil', '$nome')";
+        $sql = "insert into perfil (nome) values ('$nome')";
 
         return $conexao->executar($sql);
     }

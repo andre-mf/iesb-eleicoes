@@ -2,11 +2,14 @@
 
 include_once '../Conexao.php';
 
-class usuario
+class Usuario
 {
 
     protected $id_usuario;
     protected $nome;
+    protected $email;
+    protected $senha;
+    protected $perfil_id;
 
     /**
      * @return mixed
@@ -40,8 +43,55 @@ class usuario
         $this->nome = $nome;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
 
-    public function recuperarDados()
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email): void
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSenha()
+    {
+        return $this->senha;
+    }
+
+    /**
+     * @param mixed $senha
+     */
+    public function setSenha($senha): void
+    {
+        $this->senha = $senha;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPerfilId()
+    {
+        return $this->perfil_id;
+    }
+
+    /**
+     * @param mixed $perfil_id
+     */
+    public function setPerfilId($perfil_id): void
+    {
+        $this->perfil_id = $perfil_id;
+    }
+
+        public function recuperarDados()
     {
         $conexao = new Conexao();
 
@@ -61,18 +111,23 @@ class usuario
 
         $this->id_usuario = $dados[0]['id_usuario'];
         $this->nome = $dados[0]['nome'];
+        $this->email = $dados[0]['email'];
+        $this->senha = $dados[0]['senha'];
+        $this->perfil_id = $dados[0]['id_perfil'];
 
         return $conexao->executar($sql);
     }
 
     public function inserir($dados)
     {
-        $id_usuario = $dados['id_usuario'];
         $nome = $dados['nome'];
+        $email = $dados['email'];
+        $senha = $dados['senha'];
+        $id_perfil = $dados['id_perfil'];
 
         $conexao = new Conexao();
 
-        $sql = "insert into usuario (id_usuario, nome) values ('$id_usuario', '$nome')";
+        $sql = "insert into usuario (nome, email, senha, id_perfil) values ('$nome','$email','".md5($senha)."','$id_perfil')";
 
         return $conexao->executar($sql);
     }
@@ -81,12 +136,18 @@ class usuario
     {
         $id_usuario = $dados['id_usuario'];
         $nome = $dados['nome'];
+        $email = $dados['email'];
+        $senha = $dados['senha'];
+        $id_perfil = $dados['id_perfil'];
 
         $conexao = new Conexao();
 
         $sql = "update usuario set
                   id_usuario = '$id_usuario',
-                  nome = '$nome'
+                  nome = '$nome',
+                  email = '$email',
+                  senha = '".md5($senha)."',
+                  id_perfil = '$id_perfil'
                 where id_usuario = '$id_usuario'";
 
         return $conexao->executar($sql);

@@ -10,7 +10,7 @@ $municipio = new Municipio();
 
 // incluindo as UFs
 include_once '../uf/Uf.php';
-$uf = new usuario();
+$uf = new uf();
 
 // Recuprando os dados de municipio
 $municipios = $municipio->recuperarDados();
@@ -116,7 +116,7 @@ include_once '../cabecalho.php';
 
                     foreach ($municipios as $amunicipios) { ?>
 
-                        <option value="<?= $aumunicipios['id_municipio'] ?>"><?= $amunicipios['nome'] ?></option>
+                        <option value="<?= $amunicipios['id_municipio'] ?>"><?= $amunicipios['nome'] ?></option>
 
                     <?php } ?>
                 </select>

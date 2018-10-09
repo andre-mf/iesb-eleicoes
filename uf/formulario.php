@@ -1,7 +1,7 @@
 <?php
 include_once 'Uf.php';
 
-$uf = new usuario();
+$uf = new Uf();
 
 if (!empty($_GET['id_uf'])) {
     $uf->carregarPorId($_GET['id_uf']);

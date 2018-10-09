@@ -1,7 +1,7 @@
 <?php
 include_once 'Perfil.php';
 
-$perfil = new perfil();
+$perfil = new Perfil();
 $aPerfil = $perfil->recuperarDados();
 
 include_once '../cabecalho.php';

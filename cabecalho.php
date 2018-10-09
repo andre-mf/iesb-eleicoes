@@ -112,10 +112,16 @@
                     <a class="nav-header" href="../eleitor/index.php"><span class="fa fa-user"></span> Eleitor</a>
                 </li>
                 <li class="ripple">
-                    <a class="nav-header" href="../uf/index.php"><span class="fa fa-map"></span> UF</a>
+                    <a class="nav-header" href="../perfil/index.php"><span class="fa icon-people"></span> Perfil</a>
                 </li>
                 <li class="ripple">
-                    <a class="nav-header" href="../municipio/index.php"><span class="fa icon-location-pin"></span> Município</a>
+                    <a class="nav-header" href="../usuario/index.php"><span class="fa icon-user"></span> Usuário</a>
+                </li>
+                <li class="ripple">
+                <a class="nav-header" href="../uf/index.php"><span class="fa fa-map"></span> UF</a>
+                </li>
+                <li class="ripple">
+                <a class="nav-header" href="../municipio/index.php"><span class="fa icon-location-pin"></span> Município</a>
                 </li>
             </ul>
         </div>

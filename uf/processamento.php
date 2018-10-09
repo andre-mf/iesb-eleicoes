@@ -1,7 +1,7 @@
 <?php
 include_once 'Uf.php';
 
-$uf = new usuario();
+$uf = new uf();
 //print_r($_POST);echo'<br>';
 //print_r($_GET);die;
 

@@ -1,7 +1,7 @@
 <?php
 include_once 'Perfil.php';
 
-$perfil = new perfil();
+$perfil = new Perfil();
 
 if (!empty($_GET['id_perfil'])) {
     $perfil->carregarPorId($_GET['id_perfil']);

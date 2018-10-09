@@ -1,7 +1,7 @@
 <?php
 include_once 'Perfil.php';
 
-$perfil = new perfil();
+$perfil = new Perfil();
 
 switch ($_GET['acao']) {
     case 'salvar':
