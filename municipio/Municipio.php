@@ -30,11 +30,11 @@ class Municipio{
         $this->id_uf = $id_uf;
     }
 
-    public function recuperarDados()
+    public function recuperarDados($id_uf = null)
     {
         $conexao = new Conexao();
 
-        $sql = "select * from municipio order by nome";
+        $sql = "select * from municipio where id_uf = '$id_uf' order by nome";
         return $conexao->recuperarDados($sql);
     }
 
@@ -88,14 +88,5 @@ class Municipio{
         $sql = "delete from municipio where id_municipio = $id_municipio";
         return $conexao->executar($sql);
     }
-
-    public function preenche_combo($id_uf)
-    {
-        $conexao = new Conexao();
-
-        $sql = "SELECT * FROM municipio WHERE id_uf = '$id_uf'";
-        return $conexao->recuperarDados($sql);
-    }
-
 
 }

@@ -112,10 +112,13 @@
                     <a class="nav-header" href="../eleitor/index.php"><span class="fa fa-user"></span> Eleitor</a>
                 </li>
                 <li class="ripple">
+                    <a class="nav-header" href="../usuario/index.php"><span class="fa icon-user"></span> Usuário</a>
+                </li>
+                <li class="ripple">
                     <a class="nav-header" href="../perfil/index.php"><span class="fa icon-people"></span> Perfil</a>
                 </li>
                 <li class="ripple">
-                    <a class="nav-header" href="../usuario/index.php"><span class="fa icon-user"></span> Usuário</a>
+                    <a class="nav-header" href="../pagina/index.php"><span class="fa fa-list-alt"></span> Página</a>
                 </li>
                 <li class="ripple">
                 <a class="nav-header" href="../uf/index.php"><span class="fa fa-map"></span> UF</a>

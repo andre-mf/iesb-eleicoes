@@ -1,8 +1,4 @@
 <?php
-/**
- * Processando os dados de Eleitor
- * 
- */
 include_once 'Eleitor.php';
 
 $eleitor = new eleitor();

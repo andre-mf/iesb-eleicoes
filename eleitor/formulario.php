@@ -30,7 +30,7 @@ include_once '../cabecalho.php';
 <div class="panel box-shadow-none content-header">
     <div class="panel-body">
         <div class="col-md-12">
-            <h3 class="animated fadeInLeft"><span class="fa fa-users"></span> Eleitores</h3>
+            <h3 class="animated fadeInLeft"><span class="fa fa-user"></span> Eleitor</h3>
         </div>
     </div>
 </div>
@@ -112,6 +112,7 @@ include_once '../cabecalho.php';
             <!-- Município -->
             <div class="form-group form-animate-text" style="margin-top:40px !important;">
                 <select class="form-text" name="municipio" id="municipio">
+                    <option value="">--</option>
                     <?php
 
                     foreach ($municipios as $amunicipios) { ?>
@@ -212,10 +213,24 @@ include_once '../rodape.php';
 
         // AJAX para preenchimento do combo Municípios
         $('#uf').change(function () {
+
             $.ajax({
                 url: '../municipio/processamento.php?acao=preenche_combo&id_uf=' + $('#uf').val(),
+                dataType: 'json',
                 success: function (dados) {
-                    $('#municipio').html(dados);
+
+                    $('#municipio').html($('<option>', {
+                        value: '',
+                        text : 'Selecione'
+                    }));
+
+                    $.each(dados, function (i, item) {
+                        $('#municipio').append($('<option>', {
+                            value: item.id_municipio,
+                            text : item.nome
+                        }));
+                    });
+
                 }
             });
 

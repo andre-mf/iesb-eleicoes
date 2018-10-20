@@ -15,10 +15,8 @@ switch ($_GET['acao']){
         $municipio->excluir($_GET['id_municipio']);
         break;
     case 'preenche_combo':
-        $municipios = $municipio->preenche_combo($_GET['id_uf']);
-        foreach ($municipios as $amunicipios){
-            echo "<option value='{$amunicipios['id_municipio']}'>{$amunicipios['nome']}</option>";
-        }
+        $municipios = (new Municipio())->recuperarDados($_GET['id_uf']);
+        echo json_encode($municipios);
         die;
         break;
 }

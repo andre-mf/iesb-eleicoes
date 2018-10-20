@@ -3,6 +3,10 @@ include_once 'Municipio.php';
 
 $municipio = new Municipio();
 
+// incluindo as UFs
+include_once '../uf/Uf.php';
+$uf = (new uf())->recuperarDados();
+
 // Decidindo se ira atualizar ou inserir
 if(!empty($_GET['id_municipio'])){
     $municipio->carregarPorId($_GET['id_municipio']);
@@ -15,7 +19,7 @@ include_once '../cabecalho.php';
 <div class="panel box-shadow-none content-header">
     <div class="panel-body">
         <div class="col-md-12">
-            <h3 class="animated fadeInLeft">Município</h3>
+            <h3 class="animated fadeInLeft"><span class="fa icon-location-pin"></span> Município</h3>
         </div>
     </div>
 </div>
@@ -36,13 +40,23 @@ include_once '../cabecalho.php';
                         <input type="text" class="form-text" id="nome" name="nome" required
                                value="<?php echo $municipio->getNome(); ?>">
                         <span class="bar"></span>
-                        <label>Nome</label>
+                        <label><span class="fa icon-location-pin"></span> Nome</label>
                     </div>
                     <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                        <input type="text" class="form-text" id="id_uf" name="id_uf" required
-                               value="<?php echo $municipio->getIdUf(); ?>">
+                        <select class="form-text" name="id_uf" id="id_uf">
+                            <option value="">--</option>
+                            <?php
+
+                            foreach ($uf as $auf) { ?>
+
+                                <option value="<?= $auf['id_uf'] ?>"><?= $auf['nome'] ?></option>
+
+                            <?php } ?>
+                        </select>
+<!--                        <input type="text" class="form-text" id="id_uf" name="id_uf" required-->
+<!--                               value="--><?php //echo $municipio->getIdUf(); ?><!--">-->
                         <span class="bar"></span>
-                        <label>Município</label>
+                        <label style="font-size: 18px;"><span class="fa fa-map"></span> UF</label>
                     </div>
                     <div class="form-group">
                         <div class="text-center">

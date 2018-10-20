@@ -18,7 +18,7 @@ include_once '../cabecalho.php';
 <div class="panel box-shadow-none content-header">
     <div class="panel-body">
         <div class="col-md-12">
-            <h3 class="animated fadeInLeft">Usuario</h3>
+            <h3 class="animated fadeInLeft"><span class="fa icon-user"></span> Usuario</h3>
         </div>
     </div>
 </div>
@@ -37,19 +37,19 @@ include_once '../cabecalho.php';
                     <input type="text" class="form-text" id="nome" name="nome" required
                            value="<?php echo $usuario->getNome(); ?>">
                     <span class="bar"></span>
-                    <label>Nome</label>
+                    <label><i class="fa fa-user"></i> Nome</label>
                 </div>
                 <div class="form-group form-animate-text" style="margin-top:40px !important;">
                     <input type="email" class="form-text" id="email" name="email" required
                            value="<?php echo $usuario->getEmail(); ?>">
                     <span class="bar"></span>
-                    <label>E-mail</label>
+                    <label><i class="fa fa-envelope-o"></i> E-mail</label>
                 </div>
                 <div class="form-group form-animate-text" style="margin-top:40px !important;">
                     <input type="password" class="form-text" id="senha" name="senha" required
                            value="<?php echo $usuario->getSenha(); ?>">
                     <span class="bar"></span>
-                    <label>Senha</label>
+                    <label><i class="icons icon-key"></i> Senha</label>
                 </div>
                 <div class="form-group form-animate-text" style="margin-top:40px !important;">
                     <select class="form-text" name="id_perfil" id="id_perfil">
@@ -70,14 +70,14 @@ include_once '../cabecalho.php';
                         <?php } ?>
                     </select>
                     <span class="bar"></span>
-                    <label> <i class="icons icon-people"></i> Perfil</label>
+                    <label style="font-size: 18px;"><i class="fa icon-people"></i> Perfil</label>
                 </div>
                 <div class="form-group">
                     <div class="text-center">
                         <button type="submit" class="btn btn-success"><span class="fa fa-thumbs-o-up"> </span>
                             Salvar
                         </button>
-                        <a class="btn btn-danger" href="index.php"><span class="fa fa-reply"> </span> Voltar</a>
+                        <a class="btn btn-danger" href="index.php"><span class="fa fa-reply"></span> Voltar</a>
                     </div>
                 </div>
             </form>
