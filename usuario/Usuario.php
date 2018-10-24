@@ -9,7 +9,7 @@ class Usuario
     protected $nome;
     protected $email;
     protected $senha;
-    protected $perfil_id;
+    protected $id_perfil;
 
     /**
      * @return mixed
@@ -80,15 +80,15 @@ class Usuario
      */
     public function getPerfilId()
     {
-        return $this->perfil_id;
+        return $this->id_perfil;
     }
 
     /**
-     * @param mixed $perfil_id
+     * @param mixed $id_perfil
      */
-    public function setPerfilId($perfil_id): void
+    public function setPerfilId($id_perfil): void
     {
-        $this->perfil_id = $perfil_id;
+        $this->id_perfil = $id_perfil;
     }
 
         public function recuperarDados()
@@ -113,7 +113,7 @@ class Usuario
         $this->nome = $dados[0]['nome'];
         $this->email = $dados[0]['email'];
         $this->senha = $dados[0]['senha'];
-        $this->perfil_id = $dados[0]['id_perfil'];
+        $this->id_perfil = $dados[0]['id_perfil'];
 
         return $conexao->executar($sql);
     }
@@ -160,4 +160,33 @@ class Usuario
         $sql = "delete from usuario where id_usuario = '$id_usuario'";
         return $conexao->executar($sql);
     }
+
+    public function logar($dados)
+    {
+        $email = $dados['email'];
+        $senha = md5($dados['senha']);
+
+        $conexao = new Conexao();
+
+        $sql = "SELECT * FROM usuario
+                WHERE email = '$email'
+                AND senha = '$senha'";
+
+        $dados = $conexao->recuperarDados($sql);
+
+        if(count($dados)){
+            $nome = $dados[0]['nome'];
+            echo "<pre>"; print_r($nome); die;
+        }
+die;
+
+        $this->id_usuario = $dados[0]['id_usuario'];
+        $this->nome = $dados[0]['nome'];
+        $this->email = $dados[0]['email'];
+        $this->senha = $dados[0]['senha'];
+        $this->id_perfil = $dados[0]['id_perfil'];
+
+        return $conexao->executar($sql);
+    }
+
 }

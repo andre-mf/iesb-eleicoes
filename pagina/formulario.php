@@ -53,12 +53,12 @@ include_once '../cabecalho.php';
                             <legend style="color: #999999; font-size: 18px;"><span class="icon-lock-open"></span> Pública?</legend>
                             <label class="radio">
                                 <input id="radio1" type="radio" name="publica"
-                                       value="1" <?= ("1" == $pagina->getPublica()); ?>/>
+                                       value="1" <?= ("1" == $pagina->getPublica()) ? "checked": ""; ?>/>
                                 <span class="outer">
                               <span class="inner"></span></span> Sim
                             </label>
                             <label class="radio">
-                                <input id="radio1" type="radio" name="publica" value="0"/>
+                                <input id="radio1" type="radio" name="publica" value="0" <?= ("0" == $pagina->getPublica()) ? "checked": ""; ?>/>
                                 <span class="outer">
                               <span class="inner"></span></span> Não
                             </label>

@@ -14,6 +14,10 @@ switch ($_GET['acao']) {
     case 'excluir':
         $usuario->excluir($_GET['id_usuario']);
         break;
+    case 'logar':
+        $usuario->logar($_POST);
+        die;
+        break;
 }
 
 header('location: index.php');
