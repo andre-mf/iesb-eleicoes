@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0daff5c7-899d-4e7c-8f63-ccd052f592e5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagina/formulario.php" beforeDir="false" afterPath="$PROJECT_DIR$/pagina/formulario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usuario/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/Usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/processamento.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/processamento.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/login.php" afterDir="false" />
     </list>
     <ignored path="iesb-eleicoes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,7 +84,7 @@
     <session id="1367307898">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -102,29 +100,29 @@
           <entry key="pagina" value="2" />
           <entry key="perfil" value="2" />
           <entry key="permissao" value="4" />
-          <entry key="php" value="58" />
+          <entry key="php" value="61" />
           <entry key="sql" value="4" />
-          <entry key="usuario" value="1" />
+          <entry key="usuario" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="10" />
+          <entry key="Database Element" value="11" />
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="58" />
+          <entry key="PHP" value="61" />
           <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1483" />
+          <entry key="php" value="1556" />
           <entry key="sql" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PHP" value="1480" />
+          <entry key="PHP" value="1553" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="50" />
         </counts>
@@ -181,54 +179,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/usuario/Usuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="174" column="18" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="41" selection-start-column="41" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/usuario">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pagina/formulario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-690" />
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuario/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+            <state>
+              <folding>
+                <element signature="e#3179#3218#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usuario/processamento.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/usuario/Usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="471">
+              <caret line="180" column="6" selection-start-line="180" selection-start-column="6" selection-end-line="180" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -307,9 +273,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/console_3.sql" />
         <option value="$PROJECT_DIR$/pagina/index.php" />
         <option value="$PROJECT_DIR$/pagina/formulario.php" />
-        <option value="$PROJECT_DIR$/usuario/login.php" />
         <option value="$PROJECT_DIR$/usuario/processamento.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/console.sql" />
+        <option value="$PROJECT_DIR$/usuario/login.php" />
         <option value="$PROJECT_DIR$/usuario/Usuario.php" />
       </list>
     </option>
@@ -341,11 +307,6 @@
             <path>
               <item name="iesb-eleicoes" type="b2602c69:ProjectViewProjectNode" />
               <item name="iesb-eleicoes" type="462c0819:PsiDirectoryNode" />
-              <item name="pagina" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iesb-eleicoes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iesb-eleicoes" type="462c0819:PsiDirectoryNode" />
               <item name="usuario" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -359,7 +320,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;Oracle" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -501,14 +462,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124578000" />
+    <option name="totallyTimeSpent" value="125437000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="960" y="1040" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28366113" />
-      <window_info id="Structure" order="1" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.598895" visible="true" weight="0.20376344" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.401105" side_tool="true" visible="true" weight="0.20376344" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
@@ -517,18 +477,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32935154" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32928178" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32807016" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32982457" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="12" weight="0.3359116" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.32807016" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32707182" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="14" weight="0.32928178" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18003026" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.17903225" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,12 +673,18 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/console_1.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/console_2.sql" />
     <entry file="file://E:/Área de Trabalho/formulario.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/console_3.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pagina/form2.php" />
     <entry file="file://$PROJECT_DIR$/pagina/Pagina.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="1978">
+          <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -752,29 +718,10 @@
     <entry file="file://$PROJECT_DIR$/usuario/login_files/main.js.download">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pagina/formulario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usuario/processamento.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usuario/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -785,10 +732,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/usuario">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagina/formulario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#3179#3218#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/usuario/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="174" column="18" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
+        <state relative-caret-position="471">
+          <caret line="180" column="6" selection-start-line="180" selection-start-column="6" selection-end-line="180" selection-end-column="6" />
         </state>
       </provider>
     </entry>

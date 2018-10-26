@@ -178,7 +178,7 @@ class Usuario
             $nome = $dados[0]['nome'];
             echo "<pre>"; print_r($nome); die;
         }
-die;
+//die;
 
         $this->id_usuario = $dados[0]['id_usuario'];
         $this->nome = $dados[0]['nome'];
