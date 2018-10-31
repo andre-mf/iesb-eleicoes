@@ -78,7 +78,7 @@ class Usuario
     /**
      * @return mixed
      */
-    public function getPerfilId()
+    public function getIdperfil()
     {
         return $this->id_perfil;
     }
@@ -86,12 +86,12 @@ class Usuario
     /**
      * @param mixed $id_perfil
      */
-    public function setPerfilId($id_perfil): void
+    public function setIdperfil($id_perfil): void
     {
         $this->id_perfil = $id_perfil;
     }
 
-        public function recuperarDados()
+    public function recuperarDados()
     {
         $conexao = new Conexao();
 
@@ -115,6 +115,9 @@ class Usuario
         $this->senha = $dados[0]['senha'];
         $this->id_perfil = $dados[0]['id_perfil'];
 
+//        print_r($sql);
+//        die;
+
         return $conexao->executar($sql);
     }
 
@@ -122,12 +125,15 @@ class Usuario
     {
         $nome = $dados['nome'];
         $email = $dados['email'];
-        $senha = $dados['senha'];
+        $senha = md5($dados['senha']);
         $id_perfil = $dados['id_perfil'];
 
         $conexao = new Conexao();
 
         $sql = "insert into usuario (nome, email, senha, id_perfil) values ('$nome','$email','".md5($senha)."','$id_perfil')";
+
+//        print_r($sql);
+//        die;
 
         return $conexao->executar($sql);
     }
@@ -149,6 +155,8 @@ class Usuario
                   senha = '".md5($senha)."',
                   id_perfil = '$id_perfil'
                 where id_usuario = '$id_usuario'";
+//        print_r($sql);
+//        die;
 
         return $conexao->executar($sql);
     }
@@ -158,35 +166,77 @@ class Usuario
         $conexao = new Conexao();
 
         $sql = "delete from usuario where id_usuario = '$id_usuario'";
+
+//        print_r($sql);
+//        die;
+
         return $conexao->executar($sql);
     }
 
     public function logar($dados)
     {
+
         $email = $dados['email'];
-        $senha = md5($dados['senha']);
+        $senha  = md5($dados['senha']);
 
         $conexao = new Conexao();
 
-        $sql = "SELECT * FROM usuario
-                WHERE email = '$email'
-                AND senha = '$senha'";
+        $sql = "select * from usuario where email = '$email' and senha = '$senha'";
 
         $dados = $conexao->recuperarDados($sql);
 
-        if(count($dados)){
-            $nome = $dados[0]['nome'];
-            echo "<pre>"; print_r($nome); die;
-        }
-//die;
+//        print_r($sql);
+//        echo "<br>";
+//        print_r($dados);
 
-        $this->id_usuario = $dados[0]['id_usuario'];
-        $this->nome = $dados[0]['nome'];
-        $this->email = $dados[0]['email'];
-        $this->senha = $dados[0]['senha'];
-        $this->id_perfil = $dados[0]['id_perfil'];
+        if (count($dados)){
+
+            $_SESSION['usuario']['id_usuario'] = $dados[0]['id_usuario'];
+            $_SESSION['usuario']['nome'] = $dados[0]['nome'];
+            $_SESSION['usuario']['email'] = $dados[0]['email'];
+            $_SESSION['usuario']['id_perfil'] = $dados[0]['id_perfil'];
+
+//            $nome = $dados[0]['nome'];
+//            print_r($nome);
+        }
+
+//        die;
 
         return $conexao->executar($sql);
     }
 
+    public function possuiAcesso()
+    {
+        $raizUrl = '/iesb-eleicoes/';
+        $url = $_SERVER['REQUEST_URI'];
+
+        $sql = "select *from pagina where publica = 1";
+
+        $conexao = new Conexao();
+        $paginas = $conexao->recuperarDados($sql);
+
+        foreach ($paginas as $pagina){
+            if ($url == $raizUrl . $pagina['caminho']){
+                return true;
+            }
+        }
+
+        if (!empty($_SESSION['usuario']['id_usuario'])){
+
+            $perfil = $_SESSION['usuario']['id_perfil'];
+
+            $sql = "select * from permissao pe
+                      inner join pagina pa on pa.id_pagina = pe.id_pagina
+                    where id_perfil = $perfil";
+
+            $paginas = $conexao->recuperarDados($sql);
+            foreach ($paginas as $pagina){
+                if ($url == $raizUrl . $pagina['caminho']){
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
 }

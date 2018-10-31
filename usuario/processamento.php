@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once 'Usuario.php';
 
 $usuario = new usuario();
@@ -16,7 +17,6 @@ switch ($_GET['acao']) {
         break;
     case 'logar':
         $usuario->logar($_POST);
-        die;
         break;
 }
 

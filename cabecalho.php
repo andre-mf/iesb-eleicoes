@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+include_once '../usuario/Usuario.php';
+
+$possuiAcesso = (new Usuario())->possuiAcesso();
+
+if (!$possuiAcesso){
+    header('location: ../usuario/login.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -121,10 +134,10 @@
                     <a class="nav-header" href="../pagina/index.php"><span class="fa fa-list-alt"></span> Página</a>
                 </li>
                 <li class="ripple">
-                <a class="nav-header" href="../uf/index.php"><span class="fa fa-map"></span> UF</a>
+                    <a class="nav-header" href="../uf/index.php"><span class="fa fa-map"></span> UF</a>
                 </li>
                 <li class="ripple">
-                <a class="nav-header" href="../municipio/index.php"><span class="fa icon-location-pin"></span> Município</a>
+                    <a class="nav-header" href="../municipio/index.php"><span class="fa icon-location-pin"></span> Município</a>
                 </li>
             </ul>
         </div>
