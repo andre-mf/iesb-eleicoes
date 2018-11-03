@@ -160,7 +160,7 @@ CREATE TABLE `pagina` (
   `caminho` varchar(100) NOT NULL,
   `publica` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_pagina`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,7 +169,7 @@ CREATE TABLE `pagina` (
 
 LOCK TABLES `pagina` WRITE;
 /*!40000 ALTER TABLE `pagina` DISABLE KEYS */;
-INSERT INTO `pagina` VALUES (1,'Eleitor','eleitor/index.php',0),(2,'Eleitor','eleitor/index.php',0),(3,'teste','teste',0),(4,'teste','teste',0),(5,'teste','teste',0),(6,'teste','teste',0),(7,'municipio','municipio/index.php',0);
+INSERT INTO `pagina` VALUES (1,'Login','usuario/login.php',1),(2,'Eleitor','eleitor/index.php',0),(3,'Página','pagina/index.php',0),(4,'Município','municipio/index.php',0),(5,'Página','pagina/formulario.php',0);
 /*!40000 ALTER TABLE `pagina` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -234,11 +234,11 @@ CREATE TABLE `permissao` (
   `id_perfil` int(11) NOT NULL,
   `id_pagina` int(11) NOT NULL,
   PRIMARY KEY (`id_permissao`),
-  KEY `fk_perfil_has_pagina_pagina1_idx` (`id_pagina`),
-  KEY `fk_perfil_has_pagina_perfil1_idx` (`id_perfil`),
-  CONSTRAINT `fk_perfil_has_pagina_pagina1` FOREIGN KEY (`id_pagina`) REFERENCES `pagina` (`id_pagina`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_perfil_has_pagina_perfil1` FOREIGN KEY (`id_perfil`) REFERENCES `perfil` (`id_perfil`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  KEY `id_pagina` (`id_pagina`),
+  KEY `id_perfil` (`id_perfil`),
+  CONSTRAINT `id_pagina` FOREIGN KEY (`id_pagina`) REFERENCES `pagina` (`id_pagina`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `id_perfil` FOREIGN KEY (`id_perfil`) REFERENCES `perfil` (`id_perfil`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -247,6 +247,7 @@ CREATE TABLE `permissao` (
 
 LOCK TABLES `permissao` WRITE;
 /*!40000 ALTER TABLE `permissao` DISABLE KEYS */;
+INSERT INTO `permissao` VALUES (1,1,2),(2,1,3),(3,1,4),(4,1,5);
 /*!40000 ALTER TABLE `permissao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -299,7 +300,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'André','andremendesfelix@gmail.com','e10adc3949ba59abbe56e057f20f883e',1),(2,'Teste','teste@teste.com','e10adc3949ba59abbe56e057f20f883e',3);
+INSERT INTO `usuario` VALUES (1,'André','andre@gmail.com','e10adc3949ba59abbe56e057f20f883e',1),(2,'Teste','teste@teste.com','e10adc3949ba59abbe56e057f20f883e',3);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -345,4 +346,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-20  1:41:19
+-- Dump completed on 2018-11-03 16:56:22

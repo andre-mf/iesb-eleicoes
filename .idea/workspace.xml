@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0daff5c7-899d-4e7c-8f63-ccd052f592e5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/testeserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabecalho.php" beforeDir="false" afterPath="$PROJECT_DIR$/cabecalho.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testeserver.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/usuario/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/Usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/processamento.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/processamento.php" afterDir="false" />
     </list>
     <ignored path="iesb-eleicoes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,10 +88,11 @@
           <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -103,8 +102,8 @@
           <entry key="pagina" value="2" />
           <entry key="perfil" value="2" />
           <entry key="permissao" value="4" />
-          <entry key="php" value="61" />
-          <entry key="sql" value="4" />
+          <entry key="php" value="67" />
+          <entry key="sql" value="5" />
           <entry key="usuario" value="2" />
         </counts>
       </usages-collector>
@@ -112,20 +111,21 @@
         <counts>
           <entry key="Database Element" value="11" />
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="61" />
+          <entry key="PHP" value="67" />
+          <entry key="SQL" value="1" />
           <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1556" />
+          <entry key="php" value="1641" />
           <entry key="sql" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PHP" value="1553" />
+          <entry key="PHP" value="1638" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="50" />
         </counts>
@@ -186,73 +186,10 @@
     <favorites_list name="iesb-eleicoes" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usuario/Usuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cabecalho.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usuario/processamento.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/usuario">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/perfil">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/permissao">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/pagina">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/partido">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/usuario/Usuario.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -279,12 +216,20 @@
       <find>icon</find>
       <find>perfil_id</find>
       <find>form</find>
+      <find>teste1.php</find>
+      <find>update</find>
+      <find>sql</find>
     </findStrings>
     <replaceStrings>
       <replace>perfil</replace>
       <replace>usuario</replace>
       <replace>id_perfil</replace>
+      <replace>UPDATE</replace>
+      <replace />
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\nginx\html\PI\Web2\iesb-eleicoes\usuario</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -333,6 +278,7 @@
         <option value="$PROJECT_DIR$/testeserver.php" />
         <option value="$PROJECT_DIR$/cabecalho.php" />
         <option value="$PROJECT_DIR$/usuario/processamento.php" />
+        <option value="$PROJECT_DIR$/Dump.sql" />
         <option value="$PROJECT_DIR$/usuario/Usuario.php" />
       </list>
     </option>
@@ -344,7 +290,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
+    <option name="y" value="1040" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -353,7 +301,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,20 +308,11 @@
               <item name="iesb-eleicoes" type="b2602c69:ProjectViewProjectNode" />
               <item name="iesb-eleicoes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="iesb-eleicoes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iesb-eleicoes" type="462c0819:PsiDirectoryNode" />
-              <item name="pagina" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iesb-eleicoes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iesb-eleicoes" type="462c0819:PsiDirectoryNode" />
-              <item name="usuario" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,13 +327,13 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\nginx\html\PI\Web2\iesb-eleicoes\eleitor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\nginx\html\PI\Web2\iesb-eleicoes" />
       <recent name="C:\xampp\htdocs\Andre\iesb-eleicoes" />
       <recent name="C:\xampp\htdocs\php\iesb-eleicoes\municipio" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\nginx\html\PI\Web2\iesb-eleicoes\eleitor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -463,6 +401,7 @@
       <workItem from="1540003929839" duration="88000" />
       <workItem from="1540058433138" duration="3169000" />
       <workItem from="1540337207726" duration="4851000" />
+      <workItem from="1541274127774" duration="1582000" />
     </task>
     <task id="LOCAL-00001" summary="Teste">
       <created>1536102014581</created>
@@ -524,13 +463,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133002000" />
+    <option name="totallyTimeSpent" value="134584000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="960" y="1040" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.598895" visible="true" weight="0.2881997" />
-      <window_info id="Structure" order="1" sideWeight="0.401105" side_tool="true" visible="true" weight="0.20376344" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69723755" visible="true" weight="0.15913978" />
+      <window_info id="Structure" order="1" sideWeight="0.30276242" side_tool="true" visible="true" weight="0.15913978" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
@@ -550,7 +490,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18003026" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.19032258" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -730,13 +670,6 @@
     <entry file="file://$PROJECT_DIR$/pagina/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuario/formulario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usuario/login_files/main.js.download">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -764,50 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dump.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54332" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testeserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usuario/processamento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cabecalho.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuario/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/partido">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/pagina">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -821,12 +714,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/pagina">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/partido">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://ab0fc617-7cab-4b87-b8bc-d1811b50fa7a/schema/eleicoes/table/permissao">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testeserver.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dump.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario/formulario.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario/processamento.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

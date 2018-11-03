@@ -11,81 +11,51 @@ class Usuario
     protected $senha;
     protected $id_perfil;
 
-    /**
-     * @return mixed
-     */
     public function getIdUsuario()
     {
         return $this->id_usuario;
     }
 
-    /**
-     * @param mixed $id_usuario
-     */
     public function setIdUsuario($id_usuario)
     {
         $this->id_usuario = $id_usuario;
     }
 
-    /**
-     * @return mixed
-     */
     public function getNome()
     {
         return $this->nome;
     }
 
-    /**
-     * @param mixed $nome
-     */
     public function setNome($nome)
     {
         $this->nome = $nome;
     }
 
-    /**
-     * @return mixed
-     */
     public function getEmail()
     {
         return $this->email;
     }
 
-    /**
-     * @param mixed $email
-     */
     public function setEmail($email): void
     {
         $this->email = $email;
     }
 
-    /**
-     * @return mixed
-     */
     public function getSenha()
     {
         return $this->senha;
     }
 
-    /**
-     * @param mixed $senha
-     */
     public function setSenha($senha): void
     {
         $this->senha = $senha;
     }
 
-    /**
-     * @return mixed
-     */
     public function getIdperfil()
     {
         return $this->id_perfil;
     }
 
-    /**
-     * @param mixed $id_perfil
-     */
     public function setIdperfil($id_perfil): void
     {
         $this->id_perfil = $id_perfil;
@@ -95,7 +65,7 @@ class Usuario
     {
         $conexao = new Conexao();
 
-        $sql = "select * from usuario order by nome";
+        $sql = "SELECT * FROM usuario order by nome";
         return $conexao->recuperarDados($sql);
     }
 
@@ -105,7 +75,7 @@ class Usuario
         $conexao = new Conexao();
 
 
-        $sql = "select * from usuario where id_usuario = '$id_usuario'";
+        $sql = "SELECT * FROM usuario WHERE id_usuario = '$id_usuario'";
 
         $dados = $conexao->recuperarDados($sql);
 
@@ -130,7 +100,7 @@ class Usuario
 
         $conexao = new Conexao();
 
-        $sql = "insert into usuario (nome, email, senha, id_perfil) values ('$nome','$email','".md5($senha)."','$id_perfil')";
+        $sql = "INSERT INTO usuario (nome, email, senha, id_perfil) VALUES ('$nome','$email','".md5($senha)."','$id_perfil')";
 
 //        print_r($sql);
 //        die;
@@ -148,13 +118,13 @@ class Usuario
 
         $conexao = new Conexao();
 
-        $sql = "update usuario set
+        $sql = "UPDATE usuario SET
                   id_usuario = '$id_usuario',
                   nome = '$nome',
                   email = '$email',
                   senha = '".md5($senha)."',
                   id_perfil = '$id_perfil'
-                where id_usuario = '$id_usuario'";
+                WHERE id_usuario = '$id_usuario'";
 //        print_r($sql);
 //        die;
 
@@ -165,7 +135,7 @@ class Usuario
     {
         $conexao = new Conexao();
 
-        $sql = "delete from usuario where id_usuario = '$id_usuario'";
+        $sql = "DELETE FROM usuario WHERE id_usuario = '$id_usuario'";
 
 //        print_r($sql);
 //        die;
@@ -181,13 +151,9 @@ class Usuario
 
         $conexao = new Conexao();
 
-        $sql = "select * from usuario where email = '$email' and senha = '$senha'";
+        $sql = "SELECT * FROM usuario WHERE email = '$email' and senha = '$senha'";
 
         $dados = $conexao->recuperarDados($sql);
-
-//        print_r($sql);
-//        echo "<br>";
-//        print_r($dados);
 
         if (count($dados)){
 
@@ -196,38 +162,37 @@ class Usuario
             $_SESSION['usuario']['email'] = $dados[0]['email'];
             $_SESSION['usuario']['id_perfil'] = $dados[0]['id_perfil'];
 
-//            $nome = $dados[0]['nome'];
-//            print_r($nome);
         }
-
-//        die;
 
         return $conexao->executar($sql);
     }
 
     public function possuiAcesso()
     {
-        $raizUrl = '/iesb-eleicoes/';
+        $raizUrl = '/Web2/iesb-eleicoes/';
         $url = $_SERVER['REQUEST_URI'];
 
-        $sql = "select *from pagina where publica = 1";
+        $sql = "SELECT * FROM pagina WHERE publica = 1";
 
         $conexao = new Conexao();
         $paginas = $conexao->recuperarDados($sql);
 
+        // Se a página for cadastrada como pública, libera o acesso
         foreach ($paginas as $pagina){
             if ($url == $raizUrl . $pagina['caminho']){
                 return true;
             }
         }
 
+        // Caso a página não seja pública, verifica se o usuário está logado
+        // para então verificar se ele tem acesso à página
         if (!empty($_SESSION['usuario']['id_usuario'])){
 
             $perfil = $_SESSION['usuario']['id_perfil'];
 
-            $sql = "select * from permissao pe
-                      inner join pagina pa on pa.id_pagina = pe.id_pagina
-                    where id_perfil = $perfil";
+            $sql = "SELECT * FROM permissao pe
+                      INNER JOIN pagina pa on pa.id_pagina = pe.id_pagina
+                    WHERE id_perfil = $perfil";
 
             $paginas = $conexao->recuperarDados($sql);
             foreach ($paginas as $pagina){
